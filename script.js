@@ -1,4 +1,4 @@
-// Smooth scrolling for navigation links
+// Smooth scrolling for navigation tabs
 const navLinks = document.querySelectorAll('nav ul li a');
 
 navLinks.forEach(link => {

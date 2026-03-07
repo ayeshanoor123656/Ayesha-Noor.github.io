@@ -1,4 +1,4 @@
-/* Fonts & Reset */
+/* Reset & Fonts */
 * {
     margin: 0;
     padding: 0;
@@ -7,14 +7,14 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f5f6fa;
+    background-color: #f0f4f8;
     color: #333;
     line-height: 1.6;
 }
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #4CAF50, #45a049);
+    background-color: #0b3d91; /* Navy Blue */
     color: white;
     text-align: center;
     padding: 50px 20px;
@@ -26,34 +26,47 @@ header h1 {
 
 header p {
     font-size: 1.2rem;
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
-/* Navigation */
-nav {
-    background-color: #333;
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: 15px;
 }
 
-nav ul {
+/* Navigation Tabs */
+nav.tabs {
+    background-color: #062c6b;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav.tabs ul {
     display: flex;
     justify-content: center;
     list-style: none;
     flex-wrap: wrap;
 }
 
-nav ul li {
+nav.tabs ul li {
     margin: 10px 20px;
 }
 
-nav ul li a {
+nav.tabs ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 8px 15px;
     transition: 0.3s;
+    border-radius: 5px;
 }
 
-nav ul li a:hover {
-    color: #4CAF50;
+nav.tabs ul li a:hover {
+    background-color: #1a4ca0;
 }
 
 /* Sections */
@@ -72,7 +85,7 @@ nav ul li a:hover {
 }
 
 h2 {
-    color: #4CAF50;
+    color: #0b3d91;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -85,10 +98,16 @@ h2 {
 }
 
 .project-item {
-    background-color: #e8f5e9;
+    background-color: #e1e8f0;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
 }
 
 /* Skills */
@@ -100,19 +119,24 @@ h2 {
 }
 
 .skill {
-    background: #4CAF50;
+    background: linear-gradient(135deg, #0b3d91, #1a4ca0);
     color: white;
-    padding: 8px 15px;
+    padding: 8px 16px;
     margin: 5px;
     border-radius: 20px;
-    font-size: 0.9rem;
+    font-weight: 500;
+    transition: transform 0.2s;
+}
+
+.skill:hover {
+    transform: scale(1.1);
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
+    background-color: #062c6b;
     color: white;
     margin-top: 20px;
 }
