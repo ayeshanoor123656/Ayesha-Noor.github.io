@@ -5,67 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayesha Noor Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- Header -->
     <header>
-        <h1>Ayesha Noor</h1>
-        <p>Software Developer</p>
+        <div class="header-content">
+            <h1>Ayesha Noor</h1>
+            <p>Software Developer | Web & Full-Stack Enthusiast</p>
+        </div>
     </header>
 
     <!-- Navigation -->
     <nav>
         <ul>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#career">Career Objective</a></li>
+            <li><a href="#career">Career</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#courses">Courses</a></li>
             <li><a href="#certification">Certification</a></li>
         </ul>
     </nav>
 
     <!-- Contact Info -->
-    <section id="contact">
+    <section id="contact" class="card">
         <h2>Contact</h2>
-        <p>House No 143, UET Society, Lahore</p>
-        <p>Phone: 03097416249</p>
-        <p>Email: l230549@lhr.nu.edu.pk</p>
+        <p><strong>Address:</strong> ----</p>
+        <p><strong>Phone:</strong> 03097416249</p>
+        <p><strong>Email:</strong> l230549@lhr.nu.edu.pk</p>
     </section>
 
     <!-- Career Objective -->
-    <section id="career">
+    <section id="career" class="card">
         <h2>Career Objective</h2>
         <p>Motivated and detail-oriented Computer Science undergraduate aiming to apply technical skills and academic knowledge to real-world challenges. Passionate about software development, eager to contribute to innovative projects, and committed to continuous learning in a collaborative tech environment.</p>
     </section>
 
     <!-- Experience -->
-    <section id="experience">
+    <section id="experience" class="card">
         <h2>Experience</h2>
         <ul>
-            <li>Experienced in full-stack web development, focusing on both front-end and back-end technologies.</li>
-            <li>Proficient in implementing user authentication and data processing features.</li>
-            <li>Capable of building scalable, maintainable, and user-centric web applications.</li>
+            <li>Full-stack web development, focusing on front-end and back-end technologies.</li>
+            <li>Implemented user authentication and data processing features.</li>
+            <li>Built scalable, maintainable, and user-centric web applications.</li>
         </ul>
     </section>
 
     <!-- Projects -->
-    <section id="projects">
+    <section id="projects" class="card">
         <h2>Projects</h2>
-        <ul>
-            <li>Donation Management System – Full-stack web app with role-based dashboards and JWT auth</li>
-            <li>Sports Complex System – C++ OOP app for managing memberships</li>
-            <li>Snake and Ladder Game – Console-based C++ project</li>
-            <li>Flappy Bird Clone – Assembly game in Emu8086</li>
-            <li>Eventify – Web-based pseudo-coloring project</li>
-        </ul>
+        <div class="project-list">
+            <div class="project-item">
+                <h3>Donation Management System</h3>
+                <p>Full-stack web app with role-based dashboards and JWT auth.</p>
+            </div>
+            <div class="project-item">
+                <h3>Sports Complex System</h3>
+                <p>C++ OOP app for managing memberships.</p>
+            </div>
+            <div class="project-item">
+                <h3>Snake and Ladder Game</h3>
+                <p>Console-based C++ project.</p>
+            </div>
+            <div class="project-item">
+                <h3>Flappy Bird Clone</h3>
+                <p>Assembly game in Emu8086.</p>
+            </div>
+            <div class="project-item">
+                <h3>Eventify – Pseudocoloring / Digital Image Processing</h3>
+                <p>Web-based image processing project applying pseudocoloring techniques.</p>
+            </div>
+        </div>
     </section>
 
     <!-- Education -->
-    <section id="education">
+    <section id="education" class="card">
         <h2>Education</h2>
         <ul>
             <li>BS Computer Science, FAST-NUCES, Lahore (Exp. Aug 2027)</li>
@@ -75,29 +92,30 @@
     </section>
 
     <!-- Skills -->
-    <section id="skills">
+    <section id="skills" class="card">
         <h2>Skills</h2>
-        <ul>
-            <li>Languages: JavaScript, C++, SQL, C, Assembly</li>
-            <li>Tools: React, Node.js, Express, Git, MySQL</li>
-            <li>Soft Skills: Teamwork, Problem-solving, Time management</li>
-            <li>Activities: Creative writing (short stories and poetry), Digital art (graphic design and animation)</li>
-        </ul>
-    </section>
-
-    <!-- Relevant Courses -->
-    <section id="courses">
-        <h2>Relevant Courses</h2>
-        <ul>
-            <li>Data Structures and Algorithms</li>
-            <li>Assembly Language</li>
-            <li>Database System</li>
-            <li>Operating Systems</li>
-        </ul>
+        <div class="skill-list">
+            <span class="skill">JavaScript</span>
+            <span class="skill">C++</span>
+            <span class="skill">SQL</span>
+            <span class="skill">C</span>
+            <span class="skill">Assembly</span>
+            <span class="skill">React</span>
+            <span class="skill">Node.js</span>
+            <span class="skill">Express</span>
+            <span class="skill">Git</span>
+            <span class="skill">MySQL</span>
+            <span class="skill">Teamwork</span>
+            <span class="skill">Problem-solving</span>
+            <span class="skill">Time management</span>
+        </div>
+        <div class="activities">
+            <p><strong>Activities:</strong> Creative writing (short stories and poetry), Digital art (graphic design and animation)</p>
+        </div>
     </section>
 
     <!-- Certification -->
-    <section id="certification">
+    <section id="certification" class="card">
         <h2>Certification</h2>
         <ul>
             <li>Query Master Competition – Certificate of Participation in SQL/Data Query Challenge</li>
