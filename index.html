@@ -3,134 +3,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayesha Noor Portfolio</title>
+    <title>Ayesha Noor — Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@400;500;600&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <div class="header-content">
-            <img src="profile.jpg" alt="Ayesha Noor" class="profile-photo">
-            <h1>Ayesha Noor</h1>
-            <p>Software Developer | Web & Full-Stack Enthusiast</p>
+    <!-- Top Nav -->
+    <nav class="navbar">
+        <a href="#hero" class="logo">AN<span class="dot">.</span></a>
+        <ul class="nav-links">
+            <li><a href="#career">about</a></li>
+            <li><a href="#experience">experience</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#education">education</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#certification">certs</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle color theme">
+            <span class="sun">☀</span><span class="moon">☾</span>
+        </button>
+    </nav>
+
+    <!-- Hero -->
+    <header id="hero" class="hero">
+        <div class="hero-bg">
+            <span class="blob blob-1"></span>
+            <span class="blob blob-2"></span>
+            <span class="scribble scribble-1">✺</span>
+            <span class="scribble scribble-2">✦</span>
+            <span class="scribble scribble-3">~</span>
+        </div>
+        <div class="hero-content">
+            <img src="profile.jpg" alt="Ayesha Noor" class="profile-photo" onerror="this.style.display='none'">
+            <p class="hero-eyebrow">hi, i'm</p>
+            <h1 class="hero-name">Ayesha Noor</h1>
+            <p class="hero-tagline">building things on the web — and drawing things off it.</p>
+            <p class="hero-role">Software Developer · Full-Stack Enthusiast · Digital Artist</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">see my work</a>
+                <a href="#contact" class="btn btn-ghost">say hi</a>
+            </div>
         </div>
     </header>
 
-    <!-- Navigation Tabs -->
-    <nav class="tabs">
-        <ul>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#career">Career</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#certification">Certification</a></li>
-        </ul>
-    </nav>
+    <main>
+        <!-- Career Objective -->
+        <section id="career" class="section">
+            <p class="tag">about me</p>
+            <h2>What I'm about</h2>
+            <p class="lede">Motivated and detail-oriented Computer Science undergraduate aiming to apply technical skills and academic knowledge to real-world challenges. Passionate about software development, eager to contribute to innovative projects, and committed to continuous learning in a collaborative tech environment.</p>
+        </section>
 
-    <!-- Contact Info -->
-    <section id="contact" class="card">
-        <h2>Contact</h2>
-        <p><strong>Email:</strong> l230549@lhr.nu.edu.pk</p>
-    </section>
-
-    <!-- Career Objective -->
-    <section id="career" class="card">
-        <h2>Career Objective</h2>
-        <p>Motivated and detail-oriented Computer Science undergraduate aiming to apply technical skills and academic knowledge to real-world challenges. Passionate about software development, eager to contribute to innovative projects, and committed to continuous learning in a collaborative tech environment.</p>
-    </section>
-
-    <!-- Experience -->
-    <section id="experience" class="card">
-        <h2>Experience</h2>
-        <ul>
-            <li>Experienced in full-stack web development (front-end & back-end).</li>
-            <li>Implemented user authentication and data processing features.</li>
-            <li>Built scalable, maintainable, and user-centric web applications.</li>
-        </ul>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="card">
-        <h2>Projects</h2>
-        <div class="project-list">
-            <div class="project-item">
-                <h3>Donation Management System</h3>
-                <p>Full-stack web app with role-based dashboards and JWT authentication.</p>
+        <!-- Experience -->
+        <section id="experience" class="section">
+            <p class="tag">what I do</p>
+            <h2>Experience</h2>
+            <div class="exp-grid">
+                <div class="exp-card">
+                    <span class="exp-icon">🧩</span>
+                    <p>Experienced in full-stack web development — front-end &amp; back-end.</p>
+                </div>
+                <div class="exp-card">
+                    <span class="exp-icon">🔐</span>
+                    <p>Implemented user authentication and data processing features.</p>
+                </div>
+                <div class="exp-card">
+                    <span class="exp-icon">⚙️</span>
+                    <p>Built scalable, maintainable, and user-centric web applications.</p>
+                </div>
             </div>
-            <div class="project-item">
-                <h3>Sports Complex System</h3>
-                <p>C++ OOP application for managing memberships.</p>
-            </div>
-            <div class="project-item">
-                <h3>Snake and Ladder Game</h3>
-                <p>Console-based C++ project.</p>
-            </div>
-            <div class="project-item">
-                <h3>Flappy Bird Clone</h3>
-                <p>Assembly game in Emu8086.</p>
-            </div>
-            <div class="project-item">
-                <h3>Eventify </h3>
-                <p>Web-based event management project </p>
-            </div>
-            <div class="project-item">
-                <h3>Pseudocoloring / Digital Image Processing</h3>
-                <p>Image processing project applying pseudocoloring techniques.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Education -->
-    <section id="education" class="card">
-        <h2>Education</h2>
-        <ul>
-            <li>BS Computer Science, FAST-NUCES, Lahore (Expected Aug 2027)</li>
-            <li>F.Sc Pre-Engineering, KIPS College, Lahore (2022)</li>
-            <li>Matriculation, DPS Lahore (2020)</li>
-        </ul>
-    </section>
+        <!-- Projects -->
+        <section id="projects" class="section">
+            <p class="tag">selected work</p>
+            <h2>Projects</h2>
+            <div class="project-wall">
+                <div class="project-card rotate-1">
+                    <span class="pin"></span>
+                    <span class="project-tag tag-fullstack">Full-Stack</span>
+                    <h3>Donation Management System</h3>
+                    <p>Full-stack web app with role-based dashboards and JWT authentication.</p>
+                </div>
+                <div class="project-card rotate-2">
+                    <span class="pin"></span>
+                    <span class="project-tag tag-cpp">C++</span>
+                    <h3>Sports Complex System</h3>
+                    <p>C++ OOP application for managing memberships.</p>
+                </div>
+                <div class="project-card rotate-3">
+                    <span class="pin"></span>
+                    <span class="project-tag tag-cpp">C++</span>
+                    <h3>Snake and Ladder Game</h3>
+                    <p>Console-based C++ project.</p>
+                </div>
+                <div class="project-card rotate-1">
+                    <span class="pin"></span>
+                    <span class="project-tag tag-asm">Assembly</span>
+                    <h3>Flappy Bird Clone</h3>
+                    <p>Assembly game built in Emu8086.</p>
+                </div>
+                <div class="project-card rotate-2">
+                    <span class="pin"></span>
+                    <span class="project-tag tag-web">Web</span>
+                    <h3>Eventify</h3>
+                    <p>Web-based event management project.</p>
+                </div>
+                <div class="project-card rotate-3">
+                    <span class="pin"></span>
+                    <span class="project-tag tag-dip">DIP</span>
+                    <h3>Pseudocoloring</h3>
+                    <p>Digital image processing project applying pseudocoloring techniques.</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- Skills -->
-    <section id="skills" class="card">
-        <h2>Skills</h2>
-        <div class="skill-list">
-            <span class="skill">JavaScript</span>
-            <span class="skill">C++</span>
-            <span class="skill">SQL</span>
-            <span class="skill">C</span>
-            <span class="skill">Assembly</span>
-            <span class="skill">React</span>
-            <span class="skill">Node.js</span>
-            <span class="skill">Express</span>
-            <span class="skill">Git</span>
-            <span class="skill">MySQL</span>
-            <span class="skill">Teamwork</span>
-            <span class="skill">Problem-solving</span>
-            <span class="skill">Time management</span>
-        </div>
-        <div class="activities">
-            <p><strong>Activities:</strong> Creative writing (short stories & poetry), Digital art (graphic design & animation)</p>
-        </div>
-    </section>
+        <!-- Education -->
+        <section id="education" class="section">
+            <p class="tag">the journey</p>
+            <h2>Education</h2>
+            <ul class="timeline">
+                <li>
+                    <span class="timeline-dot"></span>
+                    <span class="timeline-year">2023 — 2027</span>
+                    <span class="timeline-detail">BS Computer Science, FAST-NUCES, Lahore <em>(expected)</em></span>
+                </li>
+                <li>
+                    <span class="timeline-dot"></span>
+                    <span class="timeline-year">2022</span>
+                    <span class="timeline-detail">F.Sc Pre-Engineering, KIPS College, Lahore</span>
+                </li>
+                <li>
+                    <span class="timeline-dot"></span>
+                    <span class="timeline-year">2020</span>
+                    <span class="timeline-detail">Matriculation, DPS Lahore</span>
+                </li>
+            </ul>
+        </section>
 
-    <!-- Certification -->
-    <section id="certification" class="card">
-        <h2>Certification</h2>
-        <ul>
-            <li>Query Master Competition – SQL/Data Query Challenge</li>
-            <li>AI for Everyone (Coursera) – Certificate of Completion</li>
-            <li>Programming for Everybody – Python (Coursera)</li>
-        </ul>
-    </section>
+        <!-- Skills -->
+        <section id="skills" class="section">
+            <p class="tag">toolbox</p>
+            <h2>Skills</h2>
+            <div class="skill-list">
+                <span class="skill s1">JavaScript</span>
+                <span class="skill s2">C++</span>
+                <span class="skill s3">SQL</span>
+                <span class="skill s1">C</span>
+                <span class="skill s2">Assembly</span>
+                <span class="skill s3">React</span>
+                <span class="skill s1">Node.js</span>
+                <span class="skill s2">Express</span>
+                <span class="skill s3">Git</span>
+                <span class="skill s1">MySQL</span>
+                <span class="skill s2">Teamwork</span>
+                <span class="skill s3">Problem-solving</span>
+                <span class="skill s1">Time management</span>
+            </div>
+            <div class="activities">
+                <p><strong>Outside of code:</strong> creative writing (short stories &amp; poetry) and digital art — graphic design &amp; animation.</p>
+            </div>
+        </section>
 
-    <!-- Footer -->
-    <footer>
-        &copy; 2026 Ayesha Noor
-    </footer>
+        <!-- Certification -->
+        <section id="certification" class="section">
+            <p class="tag">credentials</p>
+            <h2>Certification</h2>
+            <ul class="cert-list">
+                <li><span class="cert-icon">🏆</span> Query Master Competition — SQL/Data Query Challenge</li>
+                <li><span class="cert-icon">📜</span> AI for Everyone (Coursera) — Certificate of Completion</li>
+                <li><span class="cert-icon">🐍</span> Programming for Everybody — Python (Coursera)</li>
+            </ul>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section section-contact">
+            <p class="tag">let's connect</p>
+            <h2>Say hello</h2>
+            <p class="lede">Got a project, an idea, or just want to chat about code (or art)? My inbox is open.</p>
+            <a href="mailto:l230549@lhr.nu.edu.pk" class="btn btn-primary email-btn">l230549@lhr.nu.edu.pk</a>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Ayesha Noor — made with HTML, CSS &amp; a little chaos</p>
+        </footer>
+    </main>
 
     <script src="script.js"></script>
 </body>
