@@ -373,37 +373,6 @@ main {
     max-width: 680px;
 }
 
-/* Experience cards */
-.exp-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-}
-
-.exp-card {
-    background-color: var(--bg-elevated);
-    border: 1px solid var(--border);
-    border-radius: 18px;
-    padding: 28px 24px;
-    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.3s ease, background-color 0.3s ease;
-}
-
-.exp-card:hover {
-    transform: translateY(-6px) rotate(-1deg);
-    box-shadow: 0 12px 28px var(--shadow);
-}
-
-.exp-icon {
-    font-size: 2rem;
-    display: block;
-    margin-bottom: 14px;
-}
-
-.exp-card p {
-    color: var(--text-muted);
-    font-size: 0.98rem;
-}
-
 /* Project wall — pinned cards */
 .project-wall {
     display: grid;
@@ -420,6 +389,8 @@ main {
     box-shadow: 0 8px 20px var(--shadow);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .rotate-1 { transform: rotate(-1.5deg); }
@@ -464,6 +435,7 @@ main {
     padding: 4px 10px;
     border-radius: 5px;
     margin-bottom: 12px;
+    align-self: flex-start;
 }
 
 .tag-fullstack { background-color: #E0E7FF; color: #4338CA; }
@@ -486,6 +458,27 @@ html[data-theme="dark"] .tag-dip { background-color: #713F12; color: #FEF08A; }
 .project-card p {
     font-size: 0.92rem;
     color: var(--text-muted);
+}
+
+.project-stack {
+    margin-top: 12px;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-family: var(--font-hand);
+    font-size: 1rem;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.project-link:hover {
+    color: var(--coral);
 }
 
 /* Education timeline */
@@ -533,6 +526,18 @@ html[data-theme="dark"] .tag-dip { background-color: #713F12; color: #FEF08A; }
 }
 
 /* Skills */
+.skill-group {
+    margin-bottom: 32px;
+}
+
+.skill-group-title {
+    font-family: var(--font-hand);
+    font-size: 1.3rem;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
 .skill-list {
     display: flex;
     flex-wrap: wrap;
@@ -610,7 +615,64 @@ html[data-theme="dark"] .s2 { background-color: #3A2421; color: var(--coral); }
 }
 
 .section-contact .lede {
-    margin-bottom: 28px;
+    margin-bottom: 36px;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    max-width: 480px;
+    margin: 0 auto 36px;
+}
+
+.contact-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-color: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px 22px;
+    text-align: left;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.3s ease;
+}
+
+.contact-row:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px var(--shadow);
+    border-color: var(--accent);
+}
+
+.contact-icon {
+    font-size: 1.6rem;
+    flex-shrink: 0;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    overflow: hidden;
+}
+
+.contact-label {
+    font-family: var(--font-hand);
+    font-size: 1.05rem;
+    color: var(--coral);
+    font-weight: 600;
+}
+
+.contact-value {
+    font-size: 0.95rem;
+    color: var(--text);
+    text-decoration: none;
+    word-break: break-all;
+    transition: color 0.2s ease;
+}
+
+.contact-value:hover {
+    color: var(--accent);
 }
 
 .email-btn {
